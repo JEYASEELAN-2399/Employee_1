@@ -11,7 +11,7 @@ public class Main { private String name;private int age;private String dept;
         this.dept=dept;}
 
         else{
-            System.out.println("illegal entry");
+            System.out.println("user name already registered");
         }
 
     }
