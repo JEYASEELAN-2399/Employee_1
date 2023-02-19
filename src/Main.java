@@ -12,7 +12,7 @@ public class Main { private String name;private int age;private String dept;
         if (this.dept==null){
         this.dept=dept;}
 
-        return false;
+        return true;
 
 
     }
@@ -47,7 +47,14 @@ public class Main { private String name;private int age;private String dept;
                         System.out.println("enter the employee dept");
                         String dept_input=sc.nextLine();
 
-                        obj.add(input,age_input,dept_input);
+                        boolean output=obj.add(input,age_input,dept_input);
+
+                        if(output==true){
+                            System.out.println("employee added successfullyy");
+                        }else {
+                            System.out.println("employee added already");
+                        }
+
 
 
                         break;
