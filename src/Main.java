@@ -2,17 +2,18 @@ import java.util.Scanner;
 
 public class Main { private String name;private int age;private String dept;
 
-    public void add(String name,int age,String dept){
-        if (name!=null){
+    public boolean add(String name,int age,String dept){
+        if (this.name!=null){
+            return false;}
+        if (this.name==null){
             this.name=name;}
-        if (age!=0) {
+        if (this.age==0) {
             this.age=age;}
-        if (dept!=null){
+        if (this.dept==null){
         this.dept=dept;}
 
-        else{
-            System.out.println("user name already registered");
-        }
+        return false;
+
 
     }
 
@@ -47,6 +48,8 @@ public class Main { private String name;private int age;private String dept;
                         String dept_input=sc.nextLine();
 
                         obj.add(input,age_input,dept_input);
+
+
                         break;
 
                     case 2:
