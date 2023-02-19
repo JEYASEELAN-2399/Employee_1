@@ -53,8 +53,25 @@ public class Main { private String name;private int age;private String dept;
                         obj.display();
                         break;
 
+
+                case 3:
+
+                    System.out.println("enter the employee name");
+                    sc.nextLine();
+                    String name_update = sc.nextLine();
+                    System.out.println("enter the employee age");
+                    int age_update=sc.nextInt();
+                    sc.nextLine();
+                    System.out.println("enter the employee dept");
+                    String dept_update=sc.nextLine();
+
+                    obj.add(name_update,age_update,dept_update);
+                    break;
+
+
                 default :
                     System.out.println("invalid entry");
+
 
             }
         } while (true);
